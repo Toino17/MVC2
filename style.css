@@ -8,42 +8,87 @@ body{
     background-size: cover;
     min-height: 100vh;
     overflow: hidden;
-}
-
-.iphoneImg{
-    width: 80%;
-    position: absolute;
-    z-index: 0;
-    top: 50%; left: 50%; /* à 50%/50% du parent référent */
-    transform: translate(-50%, -50%);
-
+    font-size: 14px;
 }
 
 .main{
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     height: 100vh;
-    color: white;
+    color: #1d1a52;;
+    font-family: 'Cedarville Cursive', cursive;
 }
 
-.searchbar{
-    border-radius: 2px;
-    border: 0px;
-    background-color: rgb(44, 44, 44);
-}
-
-.iphoneDiv{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    
+.iphoneImg{
+    z-index: 0;
+    width: 80%;
+    min-width: 400px;
+    max-width: 800px;
+    margin-right: 100px;
 }
 
 .form1{
     display: flex;
     flex-direction: column;
+    justify-content:space-around ;
+    height: 80%;
+}
+
+.addContactButton{
+    align-self: center;
+    margin-top: auto;
+}
+
+.iphoneImgDiv{
     position: relative;
+}
+
+.iphoneDiv{
+    position: absolute;
+    z-index: 1;
+    top: 53%; left: 56%;
+    transform: translate(-50%, -50%);
+    rotate: -10deg;
+    height: 70%;
+}
+
+.contactDiv{
+    width: 100%;
+    margin-block: 0.5vw;
+}
+
+.modifierPng{
+    width: 15px;
+}
+
+button{
+    background: none;
+    border: 0px;
+    width: 5%;
+}
+
+@media (min-width: 500px) { 
+    .iphoneDiv{
+        position: absolute;
+        z-index: 1;
+        top: 53%; left: 56%;
+        transform: translate(-50%, -50%);
+        rotate: -10deg;
+    }
+    .iphoneImg{
+        z-index: 0;
+        width: 80%;
+        margin-right: 100px;
+    }
+    .contactDiv{
+        width: 100%;
+
+    }
+    .main{
+        /* font-size: calc(1em + 0.2vw); */
+       font-size: clamp(1em, 3vw, 1.4rem);
+    }
+    
 }
