@@ -3,7 +3,7 @@
 class Database
 {
     private $host = "localhost";
-    private $db_name = "mvc";
+    private $db_name = "mvc2";
     private $username = "root";
     private $password = "";
 

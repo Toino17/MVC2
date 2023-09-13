@@ -25,7 +25,7 @@
                 }
                 ?>
                 <br>
-                <button name="addContactButton" class="addContactButton"><a href="index.php?page=addContact"><img class="modifierPng" src="images/bouton-dajout.png" alt=""></a></button>
+                <button name="addContactButton" class="addContactButton"><a href="Ajouter"><img class="modifierPng" src="images/bouton-dajout.png" alt=""></a></button>
             </form>
         </div>
         </div>
